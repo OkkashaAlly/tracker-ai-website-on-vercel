@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+ai-tracker-project
+
+https://gitlab.com/0xscanner/tracker-ai-website-on-vercel.git
+git remote add origin https://ai-tracker-project:glpat-Kj1_amh5vy6_fEtWmQys@gitlab.com/0xscanner/tracker-ai-website-on-vercel.git
+
 First, run the development server: glpat-Kj1_amh5vy6_fEtWmQys
 
 ```bash
