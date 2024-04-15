@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
 
-export function ThemeSwitcher() {
+export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -32,8 +32,6 @@ export function ThemeSwitcher() {
       startContent={<HiOutlineMoon className="h-5 w-5" />}
       endContent={<HiOutlineSun className="h-5 w-5" />}
       onValueChange={handleThemeChange}
-    >
-      Dark mode
-    </Switch>
+    />
   );
 }
