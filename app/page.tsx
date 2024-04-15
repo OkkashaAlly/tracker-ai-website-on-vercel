@@ -1,10 +1,11 @@
 import Header from "./components/layouts/Header";
-import ThemeSwitcher from "./components/shared/ThemeSwitcher";
+import HeroSection from "./components/sections/HeroSection";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <HeroSection />
     </>
   );
 }

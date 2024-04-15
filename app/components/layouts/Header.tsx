@@ -97,7 +97,7 @@ const Header = () => {
 
 const WhitePaperBtn = () => (
   <Link
-    className="border dark:border-white dark:text-white text-primary border-primary px-5 py-2 uppercase w-fit"
+    className="border dark:border-white dark:text-white text-primary border-primary px-6 py-2 uppercase w-fit"
     href="#"
   >
     Whitepaper
