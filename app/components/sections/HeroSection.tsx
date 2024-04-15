@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SubHeading } from "../typography";
 
 const HeroSection = () => {
   return (
@@ -8,9 +9,7 @@ const HeroSection = () => {
       <div className="xl:w-[95%] 2xl:w-[90%] max-w-screen-2xl mx-auto flex flex-col-reverse md:flex-row px-6">
         {/* left  */}
         <div className="text-center md:text-start w-full md:w-[60%] mb-20">
-          <small className="uppercase text-[14px] md:text-[20px]">
-            Transform Your Crypto Portfolio Tracking
-          </small>
+          <SubHeading text="Transform Your Crypto Portfolio Tracking" />
           <h1 className="text-[34px] md:text-[54px] font-black leading-tight mt-2">
             The ultimate solution for managing your multi-chain portfolio
             effortlessly
