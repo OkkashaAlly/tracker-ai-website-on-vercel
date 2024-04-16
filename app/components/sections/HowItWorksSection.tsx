@@ -20,7 +20,7 @@ const HowItWorksSection = () => {
     },
     {
       icon: "/assets/web3-icon.svg",
-      title: "KOLs’ Portfolio Tracking",
+      title: "KOLs' Portfolio Tracking",
       description: `Keep tabs on Key Opinion Leaders' holdings across multiple chains by inputting their wallet addresses. You can also manage monitored wallets within the bot's wallet manager.`,
     },
   ];
@@ -55,7 +55,7 @@ const FeatureCard = ({ item }: FeatureCardProps) => {
   return (
     <figure className="border border-white p-6 md:p-8 rounded-xl">
       <Image src={item.icon} alt={item.title} width={60} height={60} />
-      <h3 className="font-medium text-[24px] mt-2.5 mb-2.5">{item.title}</h3>
+      <h3 className="font-medium text-[24px] mt-3.5 mb-2.5">{item.title}</h3>
       <p>{item.description}</p>
     </figure>
   );
