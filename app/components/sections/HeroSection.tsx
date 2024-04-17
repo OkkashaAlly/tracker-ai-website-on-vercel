@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Link from "next/link";
 import { SubHeading } from "../typography";
+import AppButton from "../shared/AppButton";
 
 const HeroSection = () => {
   return (
     // h-[calc(100vh-6rem)]
-    <section className="pt-10 md:pt-20">
-      <div className="xl:w-[95%] 2xl:w-[90%] max-w-screen-2xl mx-auto flex flex-col-reverse md:flex-row px-6">
+    <section id="overview" className="pt-10 md:pt-20">
+      <div className="app-container flex flex-col-reverse md:flex-row px-6">
         {/* left  */}
         <div className="text-center md:text-start w-full md:w-[60%] mb-20">
           <SubHeading text="Transform Your Crypto Portfolio Tracking" />
@@ -21,12 +21,7 @@ const HeroSection = () => {
             days of wondering which wallet holds which token are behind us.
             Tracker AI displays all your tokens and their respective values
           </p>
-          <Link
-            className="uppercase px-6 py-2.5 bg-primary text-white"
-            href="#"
-          >
-            Tracker AI Bot
-          </Link>
+          <AppButton text="Tracker AI Bot" link="#"/>
         </div>
         {/* right */}
         <Image

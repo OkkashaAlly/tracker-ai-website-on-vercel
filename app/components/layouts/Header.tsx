@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import AppButton from "../shared/AppButton";
 import ThemeSwitcher from "../shared/ThemeSwitcher";
 
 const Header = () => {
@@ -61,7 +62,7 @@ const Header = () => {
       {/* theme switcher  */}
       <ThemeSwitcher />
       <NavbarItem className="hidden lg:flex ml-6">
-        <WhitePaperBtn />
+        <AppButton variant="secondary" text="Whitepaper" link="#" />
       </NavbarItem>
 
       {/* mobile menu btn  */}
@@ -89,18 +90,10 @@ const Header = () => {
             </Link>
           </NavbarMenuItem>
         ))}
-        <WhitePaperBtn />
+        <AppButton variant="secondary" text="Whitepaper" link="#" />
       </NavbarMenu>
     </Navbar>
   );
 };
 
-const WhitePaperBtn = () => (
-  <Link
-    className="border dark:border-white dark:text-white text-primary border-primary px-6 py-2 uppercase w-fit"
-    href="#"
-  >
-    Whitepaper
-  </Link>
-);
 export default Header;

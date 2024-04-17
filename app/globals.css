@@ -2,6 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  padding-left: 1.5rem; /* Equivalent to Tailwind's px-6 */
+  padding-right: 1.5rem; /* Equivalent to Tailwind's px-6 */
+}
+
+/* For extra-large screens (xl) */
+@media (min-width: 1280px) {
+  .app-container {
+    width: 95%;
+    max-width: none; /* Assuming max-width-screen-2xl should override max-width */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* Equivalent to Tailwind's px-6 */
+    padding-right: 1.5rem; /* Equivalent to Tailwind's px-6 */
+  }
+}
+
+/* For extra-extra-large screens (2xl) */
+@media (min-width: 1536px) {
+  .app-container {
+    width: 90%;
+    max-width: none; /* Assuming max-width-screen-2xl should override max-width */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem; /* Equivalent to Tailwind's px-6 */
+    padding-right: 1.5rem; /* Equivalent to Tailwind's px-6 */
+  }
+}
+
 .glass-morphism {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
@@ -22,6 +55,6 @@
   .features-bg {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -13rem 1rem;
+    background-position: -13rem -3rem;
   }
 }

@@ -26,15 +26,15 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section className="features-bg py-10">
-      <div className="xl:w-[95%] 2xl:w-[90%] max-w-screen-2xl mx-auto px-6">
+    <section id="features" className="features-bg ">
+      <div className="app-container pt-10 pb-20">
         {/* top */}
         <div className="space-y-2 text-center">
           <SubHeading text="AI Tracker Features" />
           <H2 text="How It Works" />
         </div>
         {/* bottom */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 mt-6 md:w-[90%] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 xl:gap-10 mt-6 xl:w-[90%] mx-auto">
           {cardsContent.map(item => (
             <FeatureCard key={item.title} item={item} />
           ))}
