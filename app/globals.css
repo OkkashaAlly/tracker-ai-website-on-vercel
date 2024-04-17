@@ -59,8 +59,9 @@ html {
   }
 }
 
-.slick-slide {
-  /* margin-right: 10px !important; */
+.slick-slide li button {
+  cursor: none !important;
+  pointer-events: none !important;
 }
 
 .slick-dots li .slick-active button:before {
@@ -68,8 +69,9 @@ html {
 }
 
 .slick-dots li button:before {
-  color: green !important;
   display: none;
+  cursor: none !important;
+  pointer-events: none !important;
 }
 
 .slick-dots {

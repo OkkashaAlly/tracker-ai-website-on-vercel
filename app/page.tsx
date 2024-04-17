@@ -3,6 +3,7 @@ import HeroSection from "./components/sections/HeroSection";
 import HowItWorksSection from "./components/sections/HowItWorksSection";
 import RoadmapSection from "./components/sections/RoadmapSection";
 import UseCasesSection from "./components/sections/UseCasesSection";
+import TokenInformationSection from "./components/sections/TokenInformationSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HowItWorksSection />
       <UseCasesSection />
       <RoadmapSection />
+      <TokenInformationSection />
     </>
   );
 }
