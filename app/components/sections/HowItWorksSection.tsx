@@ -26,7 +26,7 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section>
+    <section className="features-bg py-10">
       <div className="xl:w-[95%] 2xl:w-[90%] max-w-screen-2xl mx-auto px-6">
         {/* top */}
         <div className="space-y-2 text-center">
@@ -53,7 +53,8 @@ type FeatureCardProps = {
 };
 const FeatureCard = ({ item }: FeatureCardProps) => {
   return (
-    <figure className="border border-white p-6 md:p-8 rounded-xl">
+    <figure className=" p-6 md:p-8 rounded-xl dark:bg-white bg-[#9FB7CE] dark:bg-opacity-25 bg-opacity-25 backdrop-filter backdrop-blur-lg border dark:border-white dark:border-opacity-25 border-[#DDEAEE]  ">
+      {/* <div className="absolute top-0 left-0 glass-morphism w-full h-full"></div> */}
       <Image src={item.icon} alt={item.title} width={60} height={60} />
       <h3 className="font-medium text-[24px] mt-3.5 mb-2.5">{item.title}</h3>
       <p>{item.description}</p>

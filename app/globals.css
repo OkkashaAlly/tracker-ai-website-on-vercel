@@ -2,3 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.features-bg {
+  background-image: url("/assets/features-bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+/* Mobile media query */
+@media (max-width: 767px) {
+  .features-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -13rem 1rem;
+  }
+}
