@@ -58,3 +58,41 @@ html {
     background-position: -13rem -3rem;
   }
 }
+
+.slick-slide {
+  /* margin-right: 10px !important; */
+}
+
+.slick-dots li .slick-active button:before {
+  /* background: red !important; */
+}
+
+.slick-dots li button:before {
+  color: green !important;
+  display: none;
+}
+
+.slick-dots {
+  display: flex !important;
+  bottom: -80px !important;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.slick-dots ul {
+  display: flex;
+  justify-content: space-around;
+  width: 238px;
+}
+
+.slick-dots li {
+  background-color: #273f55 !important;
+  width: 60px !important;
+  height: 4px !important;
+  border-radius: 3px;
+}
+
+.slick-dots li.slick-active {
+  background-color: #2facda !important;
+}
