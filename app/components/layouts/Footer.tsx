@@ -33,7 +33,7 @@ const Footer = () => {
     <footer className="pt-6 pb-10">
       <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 ">
         {/* top  */}
-        <div className="flex flex-col md:flex-row gap-5 justify-between items-center pb-4 border-b border-white/15">
+        <div className="flex flex-col md:flex-row gap-5 justify-between items-center pb-4 border-b border-black/15 dark:border-white/15">
           <Image
             src="logo-with-bg.svg"
             alt="ai tracker logo"
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
         {/* bottom  */}
-        <p className="text-center text-sm text-white/60 pt-6">
+        <p className="text-center text-sm text-black/60 dark:text-white/60 pt-6">
           {year} All rights reserved
         </p>
       </div>

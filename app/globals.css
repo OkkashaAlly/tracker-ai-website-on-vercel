@@ -153,3 +153,52 @@ html {
     background-position: center center;
   }
 }
+
+.tokenomics-bg {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(196, 228, 241, 0.55) 24%,
+    rgba(196, 228, 241, 0.65) 44%,
+    rgba(255, 255, 255, 1) 80%
+  );
+}
+
+.dark .tokenomics-bg {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(9, 9, 19, 1) 0%,
+    rgba(32, 91, 131, 0.45) 24%,
+    rgba(32, 91, 131, 0.51) 44%,
+    /* rgba(32, 91, 131, 0.45) 84%, */ rgba(9, 9, 19, 1) 70%
+  );
+  background-position: center 12rem;
+  background-repeat: no-repeat;
+}
+
+/* Mobile media query */
+@media (max-width: 767px) {
+  .dark .tokenomics-bg {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(9, 9, 19, 1) 0%,
+      rgba(32, 91, 131, 0.45) 24%,
+      rgba(32, 91, 131, 0.51) 44%,
+       rgba(9, 9, 19, 1) 80%
+    );
+    background-position: center 12rem;
+    background-repeat: no-repeat;
+  }
+
+  .tokenomics-bg {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(196, 228, 241, 0.55) 24%,
+      rgba(196, 228, 241, 0.55) 44%,
+      rgba(255, 255, 255, 1) 80%
+    );
+    background-position: center 12rem;
+    background-repeat: no-repeat;
+  }
+}

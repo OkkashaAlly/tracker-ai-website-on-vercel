@@ -46,7 +46,7 @@ const TokenInformationSection = () => {
   ];
 
   return (
-    <section id="tokenomics" className="py-20 md:pb-36">
+    <section id="tokenomics" className="py-20 md:pb-36 tokenomics-bg">
       <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 space-y-6 md:space-y-14">
         {/* top  */}
         <div className="text-center">
@@ -57,7 +57,7 @@ const TokenInformationSection = () => {
           </p>
         </div>
         {/* bottom  */}
-        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-20 items-center">
+        <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-20 items-center ">
           {/* left  */}
           <div className="hidden md:block space-y-10">
             {tokenomics.slice(0, 4).map(item => (
