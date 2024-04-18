@@ -1,6 +1,5 @@
-
 import { H2, SubHeading } from "../typography";
-import TokenomicsChart from "./TokenomicsChart"
+import TokenomicsChart from "./TokenomicsChart";
 
 const TokenInformationSection = () => {
   const tokenomics = [
@@ -47,7 +46,7 @@ const TokenInformationSection = () => {
   ];
 
   return (
-    <section id="tokenomics" className="py-10">
+    <section id="tokenomics" className="py-20 md:pb-36">
       <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 space-y-6 md:space-y-14">
         {/* top  */}
         <div className="text-center">
@@ -78,7 +77,7 @@ const TokenInformationSection = () => {
             ))}
           </div>
           {/* center  */}
-          <TokenomicsChart/>
+          <TokenomicsChart />
           {/* right  */}
           <div className="flex w-full md:w-max justify-between">
             <div className="md:hidden space-y-10">
