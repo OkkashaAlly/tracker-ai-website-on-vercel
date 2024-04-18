@@ -23,8 +23,8 @@ const Header = () => {
   return (
     <Navbar
       maxWidth="2xl"
-      // className="bg-red-100"
       height="6rem"
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent>
@@ -73,7 +73,12 @@ const Header = () => {
       {/* mobile menu  */}
       <NavbarMenu className="gap-6 pt-6">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem
+            key={`${item}-${index}`}
+            onClick={() => {
+              setIsMenuOpen(false);
+            }}
+          >
             <Link
               color={
                 index === 2
@@ -84,7 +89,6 @@ const Header = () => {
               }
               className="w-full capitalize"
               href={`#${item}`}
-              // size="lg"
             >
               {item}
             </Link>
