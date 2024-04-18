@@ -1,20 +1,20 @@
 "use client";
 import { Button } from "@nextui-org/button";
-import Image from "next/image";
 import Link from "next/link";
 import { FaEthereum, FaLinkedinIn, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import DynamicLogo from "./DynamicLogo";
 
 const Footer = () => {
   const navItems = ["overview", "features", "roadmap", "tokenomics"];
 
   const socialMedia = [
     {
-      link: "#",
+      link: "https://twitter.com/TrackerAI_ERC",
       icon: <FaXTwitter />,
     },
     {
-      link: "#",
+      link: "https://t.me/TrackerAI_ERC",
       icon: <FaTelegram />,
     },
     {
@@ -22,7 +22,7 @@ const Footer = () => {
       icon: <FaLinkedinIn />,
     },
     {
-      link: "#",
+      link: "https://etherscan.io/address/0xda558a295e8d2c1438f7b4806e283940dec7e6db",
       icon: <FaEthereum />,
     },
   ];
@@ -34,12 +34,7 @@ const Footer = () => {
       <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 ">
         {/* top  */}
         <div className="flex flex-col md:flex-row gap-5 justify-between items-center pb-4 border-b border-black/15 dark:border-white/15">
-          <Image
-            src="logo-with-bg.svg"
-            alt="ai tracker logo"
-            width={50}
-            height={50}
-          />
+          <DynamicLogo />
 
           {/* navigation */}
           <nav className="flex flex-wrap justify-center md:justify-start gap-6 md:-mr-40">

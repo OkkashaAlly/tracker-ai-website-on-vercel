@@ -9,7 +9,6 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/navbar";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import AppButton from "../shared/AppButton";
@@ -31,7 +30,7 @@ const Header = () => {
       <NavbarContent>
         {/* logo */}
         <NavbarBrand>
-          <DynamicLogo/>
+          <DynamicLogo />
         </NavbarBrand>
       </NavbarContent>
 
@@ -58,7 +57,11 @@ const Header = () => {
       {/* theme switcher  */}
       <ThemeSwitcher />
       <NavbarItem className="hidden lg:flex ml-6">
-        <AppButton variant="secondary" text="Whitepaper" link="#" />
+        <AppButton
+          variant="secondary"
+          text="Whitepaper"
+          link="https://tracker-ai.gitbook.io/tracker-ai-whitepaper/"
+        />
       </NavbarItem>
 
       {/* mobile menu btn  */}
@@ -90,7 +93,11 @@ const Header = () => {
             </Link>
           </NavbarMenuItem>
         ))}
-        <AppButton variant="secondary" text="Whitepaper" link="#" />
+        <AppButton
+          variant="secondary"
+          text="Whitepaper"
+          link="https://tracker-ai.gitbook.io/tracker-ai-whitepaper/"
+        />
       </NavbarMenu>
     </Navbar>
   );

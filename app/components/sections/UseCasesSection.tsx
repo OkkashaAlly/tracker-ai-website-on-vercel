@@ -45,7 +45,10 @@ const UseCasesSection = () => {
             <SubHeading text="Multi-Chain Portfolio Tracking" />
             <H2 text="Tracker AI use cases" />
           </div>
-          <AppButton text="Read More" link="#" />
+          <AppButton
+            text="Read More"
+            link="https://tracker-ai.gitbook.io/tracker-ai-whitepaper/"
+          />
         </div>
         {/* bottom */}
         <div className="flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-14 use-cases-bg">

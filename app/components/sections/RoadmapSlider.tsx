@@ -97,10 +97,8 @@ const RoadmapSlider = () => {
     {
       title: "Phase 4",
       content: [
-        "- Start generating revenue from ads",
-        "- Share revenue with holders",
-        "- Initiate a bot referral program to expand the user base.",
-        "- Achieve over 70,000 users",
+        "- Introduce AI-driven portfolio performance monitoring",
+        "- Incorporate NFT tracking within your wallet",
       ],
     },
   ];
