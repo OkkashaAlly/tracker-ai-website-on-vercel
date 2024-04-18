@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useState } from "react";
 import AppButton from "../shared/AppButton";
 import ThemeSwitcher from "../shared/ThemeSwitcher";
+import DynamicLogo from "./DynamicLogo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,12 +31,7 @@ const Header = () => {
       <NavbarContent>
         {/* logo */}
         <NavbarBrand>
-          <Image
-            src="logo-with-bg.svg"
-            alt="ai tracker logo"
-            width={75}
-            height={75}
-          />
+          <DynamicLogo/>
         </NavbarBrand>
       </NavbarContent>
 
