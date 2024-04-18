@@ -126,3 +126,30 @@ html {
       radial-gradient(65px 60px at 90% 79%, #2facda -500%, transparent 300px);
   }
 }
+
+.roadmap-section-bg {
+  background-image: radial-gradient(
+      circle at 50% 50%,
+      #2facda -60%,
+      transparent 280px
+    ),
+    url("/assets/path-bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Mobile media query */
+@media (max-width: 767px) {
+  .roadmap-section-bg {
+    background-image: radial-gradient(
+        circle at 50% 50%,
+        #2facda -280%,
+        transparent 280px
+      ),
+      url("/assets/path-bg.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}

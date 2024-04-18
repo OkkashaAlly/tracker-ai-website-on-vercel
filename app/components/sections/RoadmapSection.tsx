@@ -4,8 +4,8 @@ import RoadmapSlider from "./RoadmapSlider";
 
 const RoadmapSection = () => {
   return (
-    <section id="roadmap" className="pt-10 pb-20">
-      <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 space-y-6 md:space-y-14">
+    <section id="roadmap" className="pt-10 pb-20 roadmap-section-bg">
+      <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 space-y-6 md:space-y-14 roadmap-bg">
         {/* top */}
         <div className="text-center">
           <SubHeading text="The Road Ahead" />
