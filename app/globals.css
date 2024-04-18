@@ -98,3 +98,31 @@ html {
 .slick-dots li.slick-active {
   background-color: #2facda !important;
 }
+
+.use-cases-section-bg {
+  background-image: radial-gradient(
+      circle at 3% 45%,
+      #2facda -40%,
+      transparent 387px
+    ),
+    radial-gradient(65px 60px at 102% 64%, #2facda -500%, transparent 320px);
+}
+
+.use-cases-bg {
+  background-image: url("/assets/path-bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/* Mobile media query */
+@media (max-width: 767px) {
+  .use-cases-section-bg {
+    background-image: radial-gradient(
+        circle at 3% 27%,
+        #2facda -40%,
+        transparent 387px
+      ),
+      radial-gradient(65px 60px at 90% 79%, #2facda -500%, transparent 300px);
+  }
+}

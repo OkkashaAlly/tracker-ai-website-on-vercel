@@ -37,7 +37,7 @@ const UseCasesSection = () => {
   ];
 
   return (
-    <section>
+    <section className="use-cases-section-bg ">
       <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 py-10 ">
         {/* top */}
         <div className="flex flex-col md:flex-row text-center md:text-start gap-4 justify-between items-center mb-10">
@@ -48,7 +48,7 @@ const UseCasesSection = () => {
           <AppButton text="Read More" link="#" />
         </div>
         {/* bottom */}
-        <div className="flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-14">
+        <div className="flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-14 use-cases-bg">
           {/* mobile */}
           <div className="space-y-5 text-center md:hidden mb-8">
             {useCases.slice(0, 3).map(useCase => (

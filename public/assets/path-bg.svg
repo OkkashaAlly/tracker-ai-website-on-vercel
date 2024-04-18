@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1082 557" width="1082" height="557">
+	<title>path-bg(1)-svg</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(17.315,-22.297,22.297,17.315,372.825,485.416)">
+			<stop offset="0" stop-color="#254a71" stop-opacity="1"/>
+			<stop offset="1" stop-color="#254a71" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-26.789,3.471,-3.471,-26.789,268.409,95.596)">
+			<stop offset="0" stop-color="#336498" stop-opacity=".53"/>
+			<stop offset="1" stop-color="#1c4876" stop-opacity="1"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { opacity: .2;fill: none;stroke: #ffffff;stroke-width: .5 } 
+		.s1 { fill: url(#g1) } 
+		.s2 { fill: url(#g2) } 
+	</style>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m458.8 532.9c-1094.8-825.8 397 13.4 445.3-192.4 48.4-205.8-156.6-275.4-393.8-329.1"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m1022.4 122.2c-281-83.7-472.5 71.8-597.1 0-124.6-71.8-351.1-22.8-374.1 232.4"/>
+	<path id="Layer" fill-rule="evenodd" class="s0" d="m1079.7 415.5c-267.4 97-411 94.7-596.5 48.1-185.5-46.7-315.8 0-410 84.2"/>
+	<path id="Layer" class="s1" d="m370.3 465.6l19.8-2.5 2.5 19.8-19.8 2.5z"/>
+	<path id="Layer" class="s2" d="m270.8 94.8l-11.2 16.5-16.5-11.2 11.2-16.5z"/>
+</svg>
