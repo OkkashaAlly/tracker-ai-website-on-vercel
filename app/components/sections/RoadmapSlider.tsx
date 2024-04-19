@@ -4,6 +4,7 @@ import { HiArrowLongLeft, HiArrowLongRight } from "react-icons/hi2";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import { RoadmapItem } from "./StaggerComponents";
 
 const RoadmapSlider = () => {
   let sliderRef = useRef<any>();
@@ -111,17 +112,8 @@ const RoadmapSlider = () => {
           sliderRef = slider;
         }}
       >
-        {roadmapContent.map(item => (
-          <div key={item.title} className="px-2 md:px-4 !flex justify-center">
-            <div className="rounded-lg p-6 md:p-8 bg-[#99D2EC]/10 backdrop-blur w-[380px] h-[300px] md:h-[230px] border border-[#30ADDA]/30">
-              <h3 className="uppercase font-bold text-xl mb-2">{item.title}</h3>
-              <ul>
-                {item.content.map(li => (
-                  <li key={li}>{li}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        {roadmapContent.map((item, index) => (
+          <RoadmapItem key={item.title} item={item} index={index} />
         ))}
       </Slider>
       <div style={{ textAlign: "center" }}></div>

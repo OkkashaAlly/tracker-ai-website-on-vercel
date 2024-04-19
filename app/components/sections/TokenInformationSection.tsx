@@ -1,4 +1,8 @@
+"use client";
+import { fadeUpVariant } from "@/app/animations";
+import { motion } from "framer-motion";
 import { H2, P1, SubHeading } from "../typography";
+import { TokenomicItem } from "./StaggerComponents";
 import TokenomicsChart from "./TokenomicsChart";
 
 const TokenInformationSection = () => {
@@ -62,46 +66,33 @@ const TokenInformationSection = () => {
         <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-20 items-center ">
           {/* left  */}
           <div className="hidden md:block space-y-10">
-            {tokenomics.slice(0, 4).map(item => (
-              <div key={item.value} className="flex gap-4">
-                <div
-                  style={{
-                    backgroundColor: item.color,
-                    boxShadow: `0px 4px 6px ${item.color}`,
-                  }}
-                  className={`bg-[${item.color}] inline-block h-[31px] w-[28px] rounded-lg shadow`}
-                />
-                <div className="">
-                  <h5>{item.label}</h5>
-                  <p style={{ color: item.color }}>{item.value}</p>
-                </div>
-              </div>
+            {tokenomics.slice(0, 4).map((item, index) => (
+              <TokenomicItem key={item.value} item={item} index={index} />
             ))}
           </div>
           {/* center  */}
           <TokenomicsChart />
           {/* right  */}
           <div className="flex w-full md:w-max justify-between">
-            <div className="md:hidden space-y-10">
-              {tokenomics.slice(0, 4).map(item => (
-                <div key={item.value} className="flex gap-4">
-                  <div
-                    style={{
-                      backgroundColor: item.color,
-                      boxShadow: `0px 4px 6px ${item.color}`,
-                    }}
-                    className={`bg-[${item.color}] inline-block h-[31px] w-[28px] rounded-lg shadow`}
-                  />
-                  <div className="">
-                    <h5>{item.label}</h5>
-                    <p style={{ color: item.color }}>{item.value}</p>
-                  </div>
-                </div>
+            <div className="block md:hidden space-y-10">
+              {tokenomics.slice(0, 4).map((item, index) => (
+                <TokenomicItem key={index} item={item} index={index} />
               ))}
             </div>
             <div className="space-y-10">
-              {tokenomics.slice(4, 9).map(item => (
-                <div key={item.value} className="flex gap-4">
+              {tokenomics.slice(4, 9).map((item, index) => (
+                <motion.div
+                  key={index + item.value}
+                  variants={fadeUpVariant}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{
+                    once: true,
+                    margin: "-190px",
+                  }}
+                  custom={index}
+                  className="flex gap-4"
+                >
                   <div
                     style={{
                       backgroundColor: item.color,
@@ -113,7 +104,7 @@ const TokenInformationSection = () => {
                     <h5>{item.label}</h5>
                     <p style={{ color: item.color }}>{item.value}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>

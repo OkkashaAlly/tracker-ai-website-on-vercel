@@ -39,14 +39,14 @@ const HeroSection = () => {
             </P1>
             {showMore ? (
               <>
-                <P1 margin="-50px" delay={0.2}>
+                <P1 margin="-50px" index={0}>
                   Moreover, this integrated AI tracker assists in monitoring the
                   performance of coins in your portfolio, offering
                   recommendations on when to capitalize on profits or mitigate
                   losses. Currently, Tracker AI supports ETH, BSC, Polygon, ARB,
                   Fantom, and Base, with additional chains on the horizon.
                 </P1>
-                <P1 margin="-50px" delay={0.5}>
+                <P1 margin="-50px" index={1}>
                   As a Veteran Degen, you likely manage a multitude of wallets
                   for your trading endeavors. It&rsquo;s not uncommon to
                   overlook tokens stashed away in one of them until their value

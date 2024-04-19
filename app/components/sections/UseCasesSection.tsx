@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AppButton from "../shared/AppButton";
 import { H2, SubHeading } from "../typography";
+import {UseCase} from "./StaggerComponents";
 
 const UseCasesSection = () => {
   const useCases = [
@@ -54,11 +55,8 @@ const UseCasesSection = () => {
         <div className="flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-14 use-cases-bg">
           {/* mobile */}
           <div className="space-y-5 text-center md:hidden mb-8">
-            {useCases.slice(0, 3).map(useCase => (
-              <div key={useCase.title}>
-                <h3 className="uppercase font-bold text-lg">{useCase.title}</h3>
-                <p className="text-">{useCase.description}</p>
-              </div>
+            {useCases.slice(0, 3).map((useCase, index) => (
+              <UseCase key={useCase.title} useCase={useCase} index={index} />
             ))}
           </div>
           {/* left */}
@@ -70,20 +68,14 @@ const UseCasesSection = () => {
           />
           {/* right */}
           <div className="space-y-5 hidden md:block">
-            {useCases.map(useCase => (
-              <div key={useCase.title}>
-                <h3 className="uppercase font-bold text-lg">{useCase.title}</h3>
-                <p className="text-">{useCase.description}</p>
-              </div>
+            {useCases.map((useCase, index) => (
+              <UseCase key={useCase.title} useCase={useCase} index={index} />
             ))}
           </div>
           {/* mobile  */}
           <div className="space-y-5 text-center md:text-start md:hidden">
-            {useCases.slice(3, 7).map(useCase => (
-              <div key={useCase.title}>
-                <h3 className="uppercase font-bold text-lg">{useCase.title}</h3>
-                <p className="text-">{useCase.description}</p>
-              </div>
+            {useCases.slice(3, 7).map((useCase, index) => (
+              <UseCase key={useCase.title} useCase={useCase} index={index} />
             ))}
           </div>
         </div>
@@ -91,5 +83,6 @@ const UseCasesSection = () => {
     </section>
   );
 };
+
 
 export default UseCasesSection;
