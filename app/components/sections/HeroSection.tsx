@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import AppButton from "../shared/AppButton";
-import { SubHeading } from "../typography";
+import { H1, P1, SubHeading } from "../typography";
 
 const HeroSection = () => {
   const [showMore, setShowMore] = useState(false);
@@ -14,12 +14,13 @@ const HeroSection = () => {
         {/* left  */}
         <div className="text-center md:text-start w-full md:w-[60%] mb-20">
           <SubHeading text="Transform Your Crypto Portfolio Tracking" />
-          <h1 className="text-[34px] md:text-[54px] font-black leading-tight mt-2">
-            The ultimate solution for managing your multi-chain portfolio
-            effortlessly
-          </h1>
+          <H1
+            text="The ultimate solution for managing your multi-chain portfolio
+            effortlessly"
+          />
+
           <div className="w-full md:w-[80%] mt-6 mb-10 space-y-3">
-            <p>
+            <P1>
               Tracker AI is the ultimate multi-chain portfolio tracking
               solution. Simply paste your wallet address into the Telegram bot,
               and you&rsquo;ll instantly access all the tokens within your
@@ -35,17 +36,17 @@ const HeroSection = () => {
                   Show More
                 </span>
               ) : null}
-            </p>
+            </P1>
             {showMore ? (
               <>
-                <p>
+                <P1 margin="-50px" delay={0.2}>
                   Moreover, this integrated AI tracker assists in monitoring the
                   performance of coins in your portfolio, offering
                   recommendations on when to capitalize on profits or mitigate
                   losses. Currently, Tracker AI supports ETH, BSC, Polygon, ARB,
                   Fantom, and Base, with additional chains on the horizon.
-                </p>
-                <p>
+                </P1>
+                <P1 margin="-50px" delay={0.5}>
                   As a Veteran Degen, you likely manage a multitude of wallets
                   for your trading endeavors. It&rsquo;s not uncommon to
                   overlook tokens stashed away in one of them until their value
@@ -63,11 +64,14 @@ const HeroSection = () => {
                       Show Less
                     </span>
                   ) : null}
-                </p>
+                </P1>
               </>
             ) : null}
           </div>
-          <AppButton text="Tracker AI Bot" link="https://t.me/OxTracker_AI_Bot" />
+          <AppButton
+            text="Tracker AI Bot"
+            link="https://t.me/OxTracker_AI_Bot"
+          />
         </div>
         {/* right */}
         <Image

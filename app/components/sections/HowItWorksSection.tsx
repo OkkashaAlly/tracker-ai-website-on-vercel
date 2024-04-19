@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { H2, SubHeading } from "../typography";
+import { H2, P1, SubHeading } from "../typography";
 
 const HowItWorksSection = () => {
   const cardsContent = [
@@ -53,11 +53,11 @@ type FeatureCardProps = {
 };
 const FeatureCard = ({ item }: FeatureCardProps) => {
   return (
-    <figure className=" p-6 md:p-8 rounded-xl dark:bg-white bg-[#9FB7CE] dark:bg-opacity-25 bg-opacity-25 backdrop-filter backdrop-blur-lg border dark:border-white dark:border-opacity-25 border-[#DDEAEE]  ">
+    <figure className=" p-6 md:p-8 rounded-xl dark:bg-white bg-[#9FB7CE] dark:bg-opacity-25 bg-opacity-25 backdrop-filter backdrop-blur-lg border dark:border-white dark:border-opacity-25 border-[#DDEAEE]  feature-card">
       {/* <div className="absolute top-0 left-0 glass-morphism w-full h-full"></div> */}
       <Image src={item.icon} alt={item.title} width={60} height={60} />
       <h3 className="font-medium text-[24px] mt-3.5 mb-2.5">{item.title}</h3>
-      <p>{item.description}</p>
+      <P1>{item.description}</P1>
     </figure>
   );
 };

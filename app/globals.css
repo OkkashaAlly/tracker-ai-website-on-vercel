@@ -184,7 +184,7 @@ html {
       rgba(9, 9, 19, 1) 0%,
       rgba(32, 91, 131, 0.45) 24%,
       rgba(32, 91, 131, 0.51) 44%,
-       rgba(9, 9, 19, 1) 80%
+      rgba(9, 9, 19, 1) 80%
     );
     background-position: center 12rem;
     background-repeat: no-repeat;
@@ -201,4 +201,12 @@ html {
     background-position: center 12rem;
     background-repeat: no-repeat;
   }
+}
+
+.feature-card {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.04);
 }

@@ -1,4 +1,4 @@
-import { H2, SubHeading } from "../typography";
+import { H2, P1, SubHeading } from "../typography";
 import TokenomicsChart from "./TokenomicsChart";
 
 const TokenInformationSection = () => {
@@ -52,9 +52,11 @@ const TokenInformationSection = () => {
         <div className="text-center">
           <SubHeading text="Token Information" />
           <H2 text="TOKENOMICS" />
-          <p className="mt-2 break-words">
-            Contract Address: 0xda558A295e8D2C1438F7b4806e283940dec7e6Db
-          </p>
+          <P1>
+            <span className="mt-2 break-words">
+              Contract Address: 0xda558A295e8D2C1438F7b4806e283940dec7e6Db
+            </span>
+          </P1>
         </div>
         {/* bottom  */}
         <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-20 items-center ">
