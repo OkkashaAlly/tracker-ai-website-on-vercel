@@ -1,7 +1,11 @@
 "use client";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
-import { FaEthereum, FaLinkedinIn, FaTelegram } from "react-icons/fa";
+import { FaEthereum, FaTelegram } from "react-icons/fa";
+import { SiGitbook } from "react-icons/si";
+
+import { FaMedium } from "react-icons/fa6";
+
 import { FaXTwitter } from "react-icons/fa6";
 import DynamicLogo from "./DynamicLogo";
 
@@ -18,8 +22,12 @@ const Footer = () => {
       icon: <FaTelegram />,
     },
     {
-      link: "#",
-      icon: <FaLinkedinIn />,
+      link: "https://medium.com/@TrackerAI_ERC",
+      icon: <FaMedium />,
+    },
+    {
+      link: "https://tracker-ai.gitbook.io/tracker-ai-whitepaper/",
+      icon: <SiGitbook />,
     },
     {
       link: "https://etherscan.io/address/0xda558a295e8d2c1438f7b4806e283940dec7e6db",
