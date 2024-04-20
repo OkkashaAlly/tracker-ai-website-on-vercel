@@ -13,11 +13,11 @@ export const metadata: Metadata = {
     title: "Tracker AI",
     description:
       "The ultimate solution for managing your multi-chain portfolio effortlessly",
-    url: "https://tracker-ai-okkasha.vercel.app/",
+    url: "https://trackerai.bot/",
     siteName: "Tracker AI",
     images: [
       {
-        url: "https://tracker-ai-okkasha.vercel.app/og.png", // Must be an absolute URL
+        url: "https://trackerai.bot/og.png", // Must be an absolute URL
         width: 800,
         height: 600,
       },
