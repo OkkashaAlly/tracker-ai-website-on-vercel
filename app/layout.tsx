@@ -6,8 +6,25 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Tracker",
-  description: "The ultimate solution for managing your multi-chain portfolio effortlessly",
+  title: "Tracker AI",
+  description:
+    "The ultimate solution for managing your multi-chain portfolio effortlessly",
+  openGraph: {
+    title: "Tracker AI",
+    description:
+      "The ultimate solution for managing your multi-chain portfolio effortlessly",
+    url: "https://tracker-ai-okkasha.vercel.app/",
+    siteName: "Tracker AI",
+    images: [
+      {
+        url: "https://tracker-ai-okkasha.vercel.app/og.png", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
