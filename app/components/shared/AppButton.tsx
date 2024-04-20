@@ -19,7 +19,7 @@ const AppButton = ({ link, text, variant }: AppButtonProps) => {
   }
 
   return (
-    <Link className={`px-7 py-2.5 uppercase w-fit ${style}`} href={link}>
+    <Link className={`px-7 py-2.5 uppercase w-fit ${style}`} href={link} target="_blank">
       {text}
     </Link>
   );

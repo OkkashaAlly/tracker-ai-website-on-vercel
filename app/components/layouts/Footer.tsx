@@ -67,6 +67,7 @@ const Footer = () => {
                 variant="bordered"
                 as={Link}
                 href={item.link}
+                target="_blank"
               >
                 {item.icon}
               </Button>
