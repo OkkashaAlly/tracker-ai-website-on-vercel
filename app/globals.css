@@ -125,6 +125,10 @@ html {
       ),
       radial-gradient(65px 60px at 90% 79%, #2facda -500%, transparent 300px);
   }
+
+  .slick-dots {
+    gap: 1rem;
+  }
 }
 
 .roadmap-section-bg {

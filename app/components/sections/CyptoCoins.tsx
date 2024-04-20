@@ -5,7 +5,7 @@ const CyptoCoins = () => {
         id="coins-illustration"
         // width="537"
         // height="614"
-        className="w-fit h-fit md:w-[537px] md:h-[614px]"
+        className="w-[21.951rem] h-[23.258rem] md:w-[33.563rem] md:h-[38.375rem]"
         viewBox="0 0 537 614"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

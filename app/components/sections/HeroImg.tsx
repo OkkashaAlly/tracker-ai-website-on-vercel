@@ -2,7 +2,7 @@ const HeroImg = () => {
   return (
     <div>
       <svg
-      className="w-fit h-fit md:w-[544px] md:h-[651px]"
+        className="w-[18.923rem] h-[22.625rem] md:w-[34rem] md:h-[40.688rem]"
         // width="544"
         // height="651"
         viewBox="0 0 544 651"
