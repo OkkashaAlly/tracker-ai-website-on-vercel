@@ -25,6 +25,7 @@ const RoadmapSlider = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay:true,
     appendDots: (dots: any) => {
       return (
         <div className="flex mt-20">

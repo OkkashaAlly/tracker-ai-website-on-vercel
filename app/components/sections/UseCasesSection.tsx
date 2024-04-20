@@ -1,7 +1,9 @@
-import Image from "next/image";
+"use client";
+
 import AppButton from "../shared/AppButton";
 import { H2, SubHeading } from "../typography";
-import {UseCase} from "./StaggerComponents";
+import { UseCase } from "./StaggerComponents";
+import CyptoCoins from "./CyptoCoins"
 
 const UseCasesSection = () => {
   const useCases = [
@@ -60,12 +62,15 @@ const UseCasesSection = () => {
             ))}
           </div>
           {/* left */}
-          <Image
+          {/* <Image
             src="/assets/coins.svg"
             alt="crypto coins "
             width={555}
             height={613.39}
-          />
+          /> */}
+          <div>
+            <CyptoCoins />
+          </div>
           {/* right */}
           <div className="space-y-5 hidden md:block">
             {useCases.map((useCase, index) => (
@@ -83,6 +88,5 @@ const UseCasesSection = () => {
     </section>
   );
 };
-
 
 export default UseCasesSection;

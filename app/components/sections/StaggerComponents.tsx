@@ -7,9 +7,7 @@ export const UseCase = ({ useCase, index }: any) => (
     variants={fadeUpVariant}
     initial="hidden"
     whileInView="visible"
-    viewport={{
-      once: true,
-    }}
+    
     custom={index}
   >
     <h3 className="uppercase font-bold text-lg">{useCase.title}</h3>
@@ -29,8 +27,8 @@ export const RoadmapItem = ({ item, index }: any) => (
             initial="hidden"
             whileInView="visible"
             viewport={{
-              once: true,
-              margin: "-200px",
+              
+              margin: "-100px",
             }}
             custom={index2}
           >
@@ -48,8 +46,8 @@ export const TokenomicItem = ({ item, index }: any) => (
     initial="hidden"
     whileInView="visible"
     viewport={{
-      once: true,
-      margin: "-200px",
+      
+      margin: "-150px",
     }}
     custom={index}
     className="flex gap-4"

@@ -11,8 +11,7 @@ export const SubHeading = ({ text }: { text: string }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{
-      margin: "-200px",
-      once: true,
+      margin: "-80px",
     }}
   >
     {text}
@@ -26,8 +25,7 @@ export const H2 = ({ text }: { text: string }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{
-      margin: "-200px",
-      once: true,
+      margin: "-50px",
     }}
   >
     {text}
@@ -41,8 +39,7 @@ export const H1 = ({ text }: { text: string }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{
-      margin: "-200px",
-      once: true,
+      margin: "-50px",
     }}
   >
     {text}
@@ -52,7 +49,7 @@ export const H1 = ({ text }: { text: string }) => (
 export const P1 = ({
   children,
   index,
-  margin = "-300px",
+  margin = "-100px",
 }: {
   children: ReactNode;
   index?: number;
@@ -65,7 +62,6 @@ export const P1 = ({
     whileInView="visible"
     viewport={{
       margin: margin,
-      once: true,
     }}
     custom={index}
   >

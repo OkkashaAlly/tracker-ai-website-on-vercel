@@ -1,6 +1,7 @@
 "use client";
 import { fadeUpVariant } from "@/app/animations";
 import { motion } from "framer-motion";
+import { HiOutlineClipboardDocument } from "react-icons/hi2";
 import { H2, P1, SubHeading } from "../typography";
 import { TokenomicItem } from "./StaggerComponents";
 import TokenomicsChart from "./TokenomicsChart";
@@ -49,6 +50,11 @@ const TokenInformationSection = () => {
     },
   ];
 
+  const handleCopyToClipboard = () => {
+    navigator.clipboard.writeText("0xda558A295e8D2C1438F7b4806e283940dec7e6Db");
+    alert("Copied");
+  };
+
   return (
     <section id="tokenomics" className="py-20 md:pb-36 tokenomics-bg">
       <div className="xl:w-[82%] max-w-screen-2xl mx-auto px-6 space-y-6 md:space-y-14">
@@ -59,6 +65,10 @@ const TokenInformationSection = () => {
           <P1>
             <span className="mt-2 break-words">
               Contract Address: 0xda558A295e8D2C1438F7b4806e283940dec7e6Db
+              <HiOutlineClipboardDocument
+                className="inline-block ml-3 cursor-pointer h-5 w-5 text-primary mb-1"
+                onClick={handleCopyToClipboard}
+              />
             </span>
           </P1>
         </div>
@@ -87,8 +97,7 @@ const TokenInformationSection = () => {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{
-                    once: true,
-                    margin: "-190px",
+                    margin: "-140px",
                   }}
                   custom={index}
                   className="flex gap-4"

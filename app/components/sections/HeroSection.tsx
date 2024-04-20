@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 import AppButton from "../shared/AppButton";
 import { H1, P1, SubHeading } from "../typography";
+import HeroImg from "./HeroImg";
 
 const HeroSection = () => {
   const [showMore, setShowMore] = useState(false);
@@ -74,12 +74,7 @@ const HeroSection = () => {
           />
         </div>
         {/* right */}
-        <Image
-          src="/assets/hero-img.svg"
-          alt="floating phone image with coins"
-          width={517}
-          height={611}
-        />
+        <HeroImg />
       </div>
     </section>
   );
