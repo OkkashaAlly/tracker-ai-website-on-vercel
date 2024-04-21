@@ -6,11 +6,11 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tracker AI",
+  title: "Tracker AI | The ultimate portfolio tracker",
   description:
     "The ultimate solution for managing your multi-chain portfolio effortlessly",
   openGraph: {
-    title: "Tracker AI",
+    title: "Tracker AI | The ultimate portfolio tracker",
     description:
       "The ultimate solution for managing your multi-chain portfolio effortlessly",
     url: "https://trackerai.bot/",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://trackerai.bot/og.png", // Must be an absolute URL
-        width: 800,
-        height: 600,
+        width: 636,
+        height: 689,
       },
     ],
     locale: "en_US",
