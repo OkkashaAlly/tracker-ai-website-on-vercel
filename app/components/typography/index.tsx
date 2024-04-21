@@ -11,7 +11,7 @@ export const SubHeading = ({ text }: { text: string }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{
-      margin: "-80px",
+      margin: "-180px",
     }}
   >
     {text}
@@ -25,7 +25,7 @@ export const H2 = ({ text }: { text: string }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{
-      margin: "-50px",
+      margin: "-150px",
     }}
   >
     {text}
@@ -39,7 +39,7 @@ export const H1 = ({ text }: { text: string }) => (
     initial="hidden"
     whileInView="visible"
     viewport={{
-      margin: "-50px",
+      margin: "-150px",
     }}
   >
     {text}
