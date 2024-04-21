@@ -17,9 +17,12 @@ export const metadata: Metadata = {
     siteName: "Tracker AI",
     images: [
       {
-        url: "https://trackerai.bot/og.png", // Must be an absolute URL
+        url: "https://raw.githubusercontent.com/OkkashaAlly/tracker-ai-website-on-vercel/main/public/og.png", // Must be an absolute URL
+        secureUrl:
+          "https://raw.githubusercontent.com/OkkashaAlly/tracker-ai-website-on-vercel/main/public/og.png", // Must be an absolute URL
         width: 636,
         height: 689,
+        alt: "Tracker AI logo",
       },
     ],
     locale: "en_US",
