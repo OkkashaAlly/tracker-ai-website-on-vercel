@@ -2,7 +2,7 @@ export const fadeInVariant = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { ease: "easeIn", duration: 1 },
+    transition: { ease: "easeIn", duration: 0.65 },
   },
 };
 
@@ -11,6 +11,6 @@ export const fadeUpVariant = {
   visible: (index: number) => ({
     opacity: 1,
     y: 0,
-    transition: { ease: "easeIn", duration: 1, delay: index * 0.1 },
+    transition: { ease: "easeIn", duration: 0.65, delay: index * 0.1 },
   }),
 };
